@@ -1,0 +1,15 @@
+{
+  "name": "cis_221_dev_container",
+  "version": "1.0.0",
+  "description": "assignment one",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server 'src' --files 'src'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3"
+  }
+}

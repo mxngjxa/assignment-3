@@ -1,0 +1,101 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /* 1. Resets the default margin on body */
+}
+
+figure {
+    margin: 0;
+}
+
+.container {
+    padding: 0 1rem;
+}
+
+.header {
+    background-color: transparent;  /* 2. Please find out the color from Figma */
+}
+
+.site-logo {
+    text-align: center;
+}
+
+.desktop {
+    display: none;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learning-objectives {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.learning-objectives .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curriculum {
+    border-spacing: 0;
+}
+
+.curriculum thead td {
+    border-top: solid 2px #999999;
+    border-bottom: solid 1px #999999;
+}
+
+.curriculum tbody tr:last-child td {
+    border-bottom: solid 2px #999999;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 64rem;
+    }
+
+    .site-logo {
+        text-align: center;  /* 3. The logo aligns to the left on large screen */
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+    
+    .learning-objectives {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.w-full {
+    width: 100%;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+/* 
+    4. Please create a utility CSS definition for margin-top: 32px;
+    4.1 Instead of using pixel unit please use the "rem" unit.
+    4.2 Use this CSS class to add virtical spacing above the <h1>.
+ */
+
+ .font-serif {
+    font-family: 'Roboto Serif', serif;;
+ }
+
+
