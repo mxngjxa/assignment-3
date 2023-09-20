@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    /* 1. Resets the default margin on body */
+    max-width: 640px;
+    margin: 0 auto; /* 1. Resets the default margin on body */
 }
 
 figure {
@@ -12,6 +13,7 @@ figure {
 
 .container {
     padding: 0 1rem;
+    padding-top: 50px;
 }
 
 .header {
@@ -34,29 +36,99 @@ figure {
 
 .learning-objectives {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
-.learning-objectives .tile {
+.container tbody tr td{
+    border-bottom: solid 1px rgb(149, 149, 149);
+
+}
+
+.container learning-objectives tile {
     display: flex;
     flex-direction: column;
+    max-width: 93px;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 19px;
+    letter-spacing: 0em;
+
+}
+
+.tile .text .img{
+    text-align: center;
+    justify-content: center;
     align-items: center;
+    margin: 50%;
 }
 
 .curriculum {
     border-spacing: 0;
+    width: 100%;
+}
+
+.curriculum td{
+    border-spacing: 0;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.table tr{
+    border-bottom: solid 1px #999999;
+}
+
+.table {
+    max-width: 640px;
+    position: 100%; top: 0; bottom: 0; left: 0; right: 0;
+    border-collapse: collapse;
+
 }
 
 .curriculum thead td {
     border-top: solid 2px #999999;
     border-bottom: solid 1px #999999;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
 }
 
 .curriculum tbody tr:last-child td {
     border-bottom: solid 2px #999999;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 390;
+    line-height: 24px;
+    letter-spacing: 0em;
 }
 
-@media screen and (min-width: 768px) {
+.curriculum tbody td {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 390;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.container p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 390;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;    
+}
+
+@media screen and (max-width: 600px) {
     .container {
         padding: 0;
         margin: 0 auto;
@@ -77,6 +149,16 @@ figure {
     
     .learning-objectives {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center; /* Center the content */
+        width: 160px;
+        height: 176px;
+        top: 723px;
+        left: 400px;
+    
+    }
+    .tile {
+        flex-basis: 1 0 100%;
+        max-width: none; /* Remove the maximum width */
     }
 }
 
@@ -91,7 +173,7 @@ figure {
 /* 
     4. Please create a utility CSS definition for margin-top: 32px;
     4.1 Instead of using pixel unit please use the "rem" unit.
-    4.2 Use this CSS class to add virtical spacing above the <h1>.
+    4.2 Use this CSS class to add vertical spacing above the <h1>.
  */
 
  .font-serif {
@@ -99,3 +181,36 @@ figure {
  }
 
 
+.h1{
+    font-family: Roboto Serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.h2{
+    font-family: Roboto Serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    }
+
+.p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 390;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.right-column {
+    text-align: right;
+}
