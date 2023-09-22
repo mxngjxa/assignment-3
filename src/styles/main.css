@@ -3,8 +3,11 @@ html {
 }
 
 body {
-    max-width: 640px;
-    margin: 0 auto; /* 1. Resets the default margin on body */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 figure {
@@ -13,12 +16,11 @@ figure {
 
 .container {
     padding: 0 1rem;
-    padding-top: 50px;
 }
 
 .header {
     background-color: rgb(242, 250, 255);  /* 2. Please find out the color from Figma */
-
+    padding: 0px;
 }
 
 .site-logo {
@@ -32,23 +34,21 @@ figure {
 .footer {
     background-color: rgb(57, 135, 184);
     height: 140px;
-    
-    width: 225%; /* Set a width greater than the body's max-width */
-    margin-left: -67.5%;
-
-    display: flex;
-    justify-content: center;
 }
 
 .footer-content {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
     font-family: Roboto;
     font-size: 16px;
-    font-weight: 60px;
+    font-weight: 400;
     line-height: 24px;
+    letter-spacing: 0em;
     text-align: left;
-    color: white;
+    padding-top: 24px;
 }
 
 .footer-content:first-child {
@@ -63,10 +63,10 @@ figure {
 
 .learning-objectives {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .container tbody tr td{
@@ -75,7 +75,8 @@ figure {
 }
 
 .learning-objectives .tile {
-    padding: 5%;
+    padding: 10%;
+    flex-direction: column;
 }
 
 .tile .text{
