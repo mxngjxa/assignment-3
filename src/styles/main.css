@@ -20,7 +20,7 @@ figure {
 
 .header {
     background-color: rgb(242, 250, 255);  /* 2. Please find out the color from Figma */
-    padding: 0px;
+    width: 100%;
 }
 
 .site-logo {
@@ -34,15 +34,17 @@ figure {
 .footer {
     background-color: rgb(57, 135, 184);
     height: 140px;
+    width: 100%;
 }
 
-.footer-content {
+.footer-content{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     font-family: Roboto;
+    color: white;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -51,15 +53,6 @@ figure {
     padding-top: 24px;
 }
 
-.footer-content:first-child {
-    width: 300px;
-    padding-left: 85px;
-}
-
-.footer-content:last-child {
-    width: 100px;
-    padding-left: 190px;
-}
 
 .learning-objectives {
     display: flex;
@@ -82,7 +75,7 @@ figure {
 .tile .text{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    font-weight: 550;
+    font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
@@ -135,7 +128,7 @@ figure {
 
     font-family: Roboto;
     font-size: 16px;
-    font-weight: 390;
+    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
 }
@@ -143,7 +136,7 @@ figure {
 .curriculum tbody td {
     font-family: Roboto;
     font-size: 16px;
-    font-weight: 390;
+    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
 }
@@ -151,7 +144,7 @@ figure {
 .container p {
     font-family: Roboto;
     font-size: 16px;
-    font-weight: 390;
+    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;    
@@ -207,6 +200,7 @@ figure {
 
  .margin-top-32 {
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
  .font-serif {
@@ -231,6 +225,9 @@ h2{
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     
     }
 
