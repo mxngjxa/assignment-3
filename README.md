@@ -1,4 +1,1 @@
-# Assignment 3
-
-Please refer to the instructions in [assignment-1](https://github.com/feitian-mt-cis-221-fall-2023/assignment-1) to get this project running.
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5cd9638d-0327-4bd7-b6d7-563764381098/deploy-status)](https://app.netlify.com/projects/stalwart-bubblegum-68a671/deploys)
